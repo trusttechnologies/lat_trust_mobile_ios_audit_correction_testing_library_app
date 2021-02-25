@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuditCorrectionLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Mzv-12-fzU">
+                                <rect key="frame" x="136" y="340" width="142" height="216.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWj-5s-c51">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Audits: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-Sm-7by">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCn-DH-Fo2">
+                                                <rect key="frame" x="131.5" y="0.0" width="10.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryS-5g-wwX">
+                                        <rect key="frame" x="0.0" y="39.5" width="142" height="30"/>
+                                        <state key="normal" title="Create 1 Audits"/>
+                                        <connections>
+                                            <action selector="createOneAudit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKF-Gk-R9g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKg-aw-d0e">
+                                        <rect key="frame" x="0.0" y="88.5" width="142" height="30"/>
+                                        <state key="normal" title="Create 3 Audits"/>
+                                        <connections>
+                                            <action selector="createThreeAudits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7c-Ov-V3w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-sI-LkM">
+                                        <rect key="frame" x="0.0" y="137.5" width="142" height="30"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendAudit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USu-3M-JGe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Du9-fu-1KZ">
+                                        <rect key="frame" x="0.0" y="186.5" width="142" height="30"/>
+                                        <state key="normal" title="Create Audit DIRECT"/>
+                                        <connections>
+                                            <action selector="createDirectAudit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rM-tD-2ig"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-8i-F2T">
+                                <rect key="frame" x="192" y="146" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="f5"/>
+                                <connections>
+                                    <action selector="refreshBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jry-uA-TyV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mzv-12-fzU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2hd-s5-8as"/>
+                            <constraint firstItem="Mzv-12-fzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="82M-da-UTv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="auditsCount" destination="XCn-DH-Fo2" id="BN2-1m-nva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1064" y="66"/>
+        </scene>
+    </scenes>
+</document>
